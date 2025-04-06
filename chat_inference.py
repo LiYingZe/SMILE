@@ -344,7 +344,7 @@ if __name__== "__main__":
     parser.add_argument('--max_length', type=int, default=60, help='Maximum length for output sequences.')
     parser.add_argument('--HIDDEN_SIZE', type=int, default=512)
     parser.add_argument('--LayerNum', type=int, default=1)
-    parser.add_argument('--GPU', type=int, default=3)
+    parser.add_argument('--GPU', type=int, default=0)
     parser.add_argument('--inferSampleNum', type=int, default= 4, help='Number of Inference Samples')
     parser.add_argument('--inferParrellism', type=int, default=64, help='Inference Paralism')
     parser.add_argument('--lr', type=float, default=0.0003, help='Number of samples for inference.')
