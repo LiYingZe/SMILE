@@ -110,7 +110,7 @@ python evaluate.py   --PathOfModel ./models/lineitem10000_lr0.0003_in1Pct2/Ep_99
 
 ## 💬 Interactive LIKE Pattern Prediction 🧠✨
 
-We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡. This interaction simulates the SQL query execution of `SELECT * FROM lineitem where comment LIKE "%keyword%" LIMIT K` 📊🔍.
+We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡. 
 
 Just type your pattern and hit enter ⌨️—our lightweight neural engine will return the predicted matching results 🎯 in real-time!
 
@@ -130,11 +130,11 @@ python chat_inference.py --data_path "./data/lineitem10000.csv" --PathOfModel ".
 
 ### 🧙 What it does:
 
-- 🗣️ **Talk to SMILE**: Enter `LIKE` patterns naturally
-- ⚡ **Fast Results**: Get predictions almost instantly
-- 🎯 **Real Queries**: Test against actual `lineitem` dataset entries
-- 💡 **Smart Matching**: Handles wildcards `%` and `_` with learned intelligence
-
+- 🗣️ **Converse with SMILE**: Effortlessly input `LIKE` patterns in a natural way.
+- ⚡ **Instantaneous Results**: Get predictions in the blink of an eye.
+- 🎯 **Real-World Queries**: Test against actual entries in the `lineitem` dataset.
+- 💡 **Intelligent Matching**: Smartly handles wildcards `%` and `_` with learned intelligence.
+- 📊 **Neuron LIKE Acceleration**: Simulates the query `SELECT * FROM lineitem WHERE comment LIKE "%keyword%" LIMIT K` in realistic scenes (e.g., search engines).
 ------
 
 ### 🧪 Sample Inputs to Try 🎮
