@@ -54,6 +54,33 @@ Our project is organized as follows:
 For the convenience of demonstration, we have provided a sample of 10,000 records from the TPC-H lineitem table. 😊 
 We denote it as `lineitem10000` 📄, which contains  10,000 entries from the `l_comment` column of the TPC-H `lineitem` table. Saved as `lineitem10000.csv` in the `data` directory.More datasets can be referred to through our links. 📚
 
+## 📧 Emails
+
+For the **Emails** dataset, we use `gen_email.py` to generate the data 🛠️. After generation, **deduplication** is required to ensure clean and unique entries 🧹✨.
+
+▶️ Run the following commands to generate and clean the data:
+
+```
+python gen_email.py     # 📧 Generate email samples
+python duplicate.py     # 🧼 Deduplicate entries
+```
+
+✅ Now your email dataset is fresh, clean, and ready to go! 🚀
+
+------
+
+## 📱 Phone Numbers
+
+For the **Phone_numbers** dataset, we use `gen_phone_data.py` to generate the data 📲. Similar to the emails, **deduplication** is necessary after generation to avoid noisy duplicates 🧽.
+
+▶️ Use the following commands:
+
+```
+python gen_phone_data.py  # 📱 Generate phone number samples
+python duplicate.py       # 🧼 Deduplicate entries
+```
+
+📦 Once cleaned, the phone number dataset is good to go for training, testing, or querying! 💪📊
 
 ------
 
