@@ -108,6 +108,43 @@ python evaluate.py   --PathOfModel ./models/lineitem10000_lr0.0003_in1Pct2/Ep_99
 
 ------
 
+## 💬 Interactive LIKE Pattern Prediction 🧠✨
+
+We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡.
+
+Just type your pattern and hit enter ⌨️—our lightweight neural engine will return the predicted matching results 🎯 in real-time!
+
+You can **exit anytime** by typing `'exit'` or `'q'` ❌👋.
+
+------
+
+### 🧪 Try it Yourself!
+
+Launch the program using this command:
+
+```
+python chat_inference.py --data_path "./data/lineitem10000.csv" --PathOfModel "./models/lineitem10000_lr0.0003_in1Pct2/Ep_9999_Seq2Seq"
+```
+
+------
+
+### 🧙 What it does:
+
+- 🗣️ **Talk to SMILE**: Enter `LIKE` patterns naturally
+- ⚡ **Fast Results**: Get predictions almost instantly
+- 🎯 **Real Queries**: Test against actual `lineitem` dataset entries
+- 💡 **Smart Matching**: Handles wildcards `%` and `_` with learned intelligence
+
+------
+
+> 🧩 *Behind the scenes*: Your pattern is passed through our small but mighty SMILE model 🤖, which acts as a translator to predict the set of rows that match your pattern—**way faster** than scanning the whole column linearly. 🔥
+
+------
+
+Whether you're debugging, testing queries, or just curious—this mode makes SMILE fun and interactive to explore! 🤓🎉
+
+Ready to chat with your database? 💬📊 Let the LIKE magic begin! ✨🪄
+
 Ready to make your databases **smile**? 😄
  Let neural LIKE acceleration begin! ⚡🧠📚
 
