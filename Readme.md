@@ -137,6 +137,18 @@ python chat_inference.py --data_path "./data/lineitem10000.csv" --PathOfModel ".
 
 ------
 
+### 🧪 Sample Inputs to Try 🎮
+
+Here are some fun and practical pattern examples you can test out:
+
+- `%ak% sl_ly %`
+- `%. furious_y %%` 
+- `%s across the fur_o%sly fina%` 
+- `%egu_ar grouche_ cajol_ fluffil%` 
+- `% use arou_d th_%` 
+
+> 🧠 *Hint*: `%` matches **any number** of characters, `_` matches **exactly one** character.
+
 > 🧩 *Behind the scenes*: Your pattern is passed through our small but mighty SMILE model 🤖, which acts as a translator to predict the set of rows that match your pattern—**way faster** than scanning the whole column linearly. 🔥
 
 ------
