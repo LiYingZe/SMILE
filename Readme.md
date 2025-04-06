@@ -54,7 +54,7 @@ Our project is organized as follows:
 For the convenience of demonstration, we have provided a sample of 10,000 records from the TPC-H lineitem table. 😊 
 We denote it as `lineitem10000` 📄, which contains  10,000 entries from the `l_comment` column of the TPC-H `lineitem` table. Saved as `lineitem10000.csv` in the `data` directory.More datasets can be referred to through our links. 📚
 
-## 📧 Emails
+### 📧 Emails
 
 For the **Emails** dataset, we use `gen_email.py` to generate the data 🛠️. After generation, **deduplication** is required to ensure clean and unique entries 🧹✨.
 
@@ -69,7 +69,7 @@ python duplicate.py     # 🧼 Deduplicate entries
 
 ------
 
-## 📱 Phone Numbers
+### 📱 Phone Numbers
 
 For the **Phone_numbers** dataset, we use `gen_phone_data.py` to generate the data 📲. Similar to the emails, **deduplication** is necessary after generation to avoid noisy duplicates 🧽.
 
@@ -110,7 +110,7 @@ python evaluate.py   --PathOfModel ./models/lineitem10000_lr0.0003_in1Pct2/Ep_99
 
 ## 💬 Interactive LIKE Pattern Prediction 🧠✨
 
-We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡.
+We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡. This interaction simulates the SQL query execution of `SELECT * FROM lineitem where comment LIKE "%keyword%" LIMIT K` 📊🔍.
 
 Just type your pattern and hit enter ⌨️—our lightweight neural engine will return the predicted matching results 🎯 in real-time!
 
