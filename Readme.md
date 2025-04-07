@@ -98,6 +98,14 @@ python SLM_Like.py   --lr 0.0003   --batch_size 1024   --inPct 0.1   --pct 0.2  
 
 ## 📈 Evaluate SMILE
 
+We’ve uploaded the model in `.zip` format to the following directory:
+
+```
+SMILE/models/lineitem10000_lr0.0003_in1Pct2/Ep_9999_Seq2Seq.zip
+```
+
+📦 To use it, simply **unzip** the file into this directory — no retraining needed! Just plug and play! 🔧✨
+
 Evaluate the trained model with:
 
 ```bash
