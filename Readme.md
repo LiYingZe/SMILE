@@ -83,22 +83,11 @@ python duplicate.py       # 🧼 Deduplicate entries
 📦 Once cleaned, the phone number dataset is good to go for training, testing, or querying! 💪📊
 
 ------
-
-## 🧪 Train SMILE
-
-You can use our pre-trained model (W1 setting) ✅ and train your own SMILE with an 8GB budget-friendly GPU to easily verify it. It's super convenient and cost-effective, and you can get started right away. Just plug in the model and see the magic happen! 🌟
-
-```bash
-python SLM_Like.py   --lr 0.0003   --batch_size 1024   --inPct 0.1   --pct 0.2   --saveName lineitem10000_lr0.0003_in1Pct2   --data_path ./data/lineitem10000.csv  --GPU 0 
-```
-
-💡 *Tip: Adjust `--inPct` and `--pct` to control query inclusion and wildcard percentage.*
-
 ------
 
 ## 📈 Evaluate SMILE
 
-We’ve uploaded the model in `.zip` format to the following directory:
+You can use our pre-trained SMILE (W1 setting) ✅ We’ve uploaded the model in `.zip` format to the following directory:
 
 ```
 SMILE/models/lineitem10000_lr0.0003_in1Pct2/Ep_9999_Seq2Seq.zip
@@ -113,6 +102,17 @@ python evaluate.py   --PathOfModel ./models/lineitem10000_lr0.0003_in1Pct2/Ep_99
 ```
 
 🔍 This runs LIKE queries  for different LIKE Workloads 📊.
+
+## 🧪 Train SMILE
+
+You can also train your own SMILE with an 8GB budget-friendly GPU to easily verify it. It's super convenient and cost-effective, and you can get started right away. Just plug in the model and see the magic happen! 🌟
+
+```bash
+python SLM_Like.py   --lr 0.0003   --batch_size 1024   --inPct 0.1   --pct 0.2   --saveName lineitem10000_lr0.0003_in1Pct2   --data_path ./data/lineitem10000.csv  --GPU 0 
+```
+
+💡 *Tip: Adjust `--inPct` and `--pct` to control query inclusion and wildcard percentage.*
+
 
 ------
 
