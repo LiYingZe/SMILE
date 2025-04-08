@@ -4,12 +4,12 @@
 
 Modern databases often use the `LIKE` predicate to search text data. However, when the search condition is interrupted by wildcards (`%`, `_`), the existing search structure can degrade into a worst-case linear scan 🐌, resulting in poor performance. Traditional methods like B+-trees 🌳 struggle when wildcards appear at **both ends** of the pattern.
 
-Recent advances in language models 💡 open a promising new path. These models can "understand" and **decode** complex `LIKE` patterns into a small set of candidate values 🧠🔍, which are then verified in constant time using hash table lookups ⚡—greatly improving efficiency! But… integrating LLMs directly into databases is **hard** due to high latency ⏱️, large storage 🗄️, and sensitivity to data drift 🎯.
+Recent advances in language models 💡 open a promising new path. These models can "understand" and **decode** complex `LIKE` patterns into a small set of candidate values 🤖🔍, which are then verified in constant time using hash table lookups ⚡—greatly improving efficiency! But… integrating LLMs directly into databases is **hard** due to high latency ⏱️, large storage 🗄️, and sensitivity to data drift 🎯.
 
 ------
 
-### 🧠 Meet **SMILE**: *Small language Model Integrated LIKE Engine* 😄
-
+### 🤖 Meet **SMILE**: *Small language Model Integrated LIKE Engine* 😄
+![SMILE](./SMILE.png)
 SMILE learns **column-local character distributions** through small but exquisite parameters ✨. It acts as a *neural translator* 🔄 that converts `LIKE` patterns into their corresponding result sets—fast 🏎️, precise 🎯, and lightweight 🪶.
 
 ### 🏆 Why SMILE?
@@ -35,7 +35,7 @@ Our project is organized as follows:
 │   └── run_workload.py            🚀  Execute evaluation
 ├── evaluate.py                    🏁 Model evaluation
 ├── SLM_Like.py                    🏋️ Model training
-└── models                         🧠Trained model parameters
+└── models                         🤖Trained model parameters
 ```
 
 ------
@@ -116,7 +116,7 @@ python SLM_Like.py   --lr 0.0003   --batch_size 1024   --inPct 0.1   --pct 0.2  
 
 ------
 
-## 💬 Interactive LIKE Pattern Prediction 🧠✨
+## 💬 Interactive LIKE Pattern Prediction 🤖✨
 
 We provide an **interactive program** 🕹️ that allows you to input a SQL `LIKE` pattern 🔍 (e.g., `%fox%`, `__quick`, `lazy%`) and get **instant predictions** powered by our SMILE model 😄⚡. 
 
@@ -155,7 +155,7 @@ Here are some fun and practical pattern examples you can test out:
 - `%egu_ar grouche_ cajol_ fluffil%` 
 - `% use arou_d th_%` 
 
-> 🧠 *Hint*: `%` matches **any number** of characters, `_` matches **exactly one** character.
+> 🤖 *Hint*: `%` matches **any number** of characters, `_` matches **exactly one** character.
 
 > 🧩 *Behind the scenes*: Your pattern is passed through our small but mighty SMILE model 🤖, which acts as a translator to predict the set of rows that match your pattern—**way faster** than scanning the whole column linearly. 🔥
 
@@ -166,5 +166,5 @@ Whether you're debugging, testing queries, or just curious—this mode makes SMI
 Ready to chat with your database? 💬📊 Let the LIKE magic begin! ✨🪄
 
 Ready to make your databases **smile**? 😄
- Let neural LIKE acceleration begin! ⚡🧠📚
+ Let neural LIKE acceleration begin! ⚡🤖📚
 
