@@ -1,5 +1,5 @@
 ------
-
+### (Update) We have added 84,047 real-world LIKE predicate usage scenarios from 30 datasets in the file Realworld_84047LIKE.csv.
 # 🚀 **The Case For Language Model Accelerated** **LIKE** **Predicate**
 
 Modern databases often use the `LIKE` predicate to search text data. However, when the search condition is interrupted by wildcards (`%`, `_`), the existing search structure can degrade into a worst-case linear scan 🐌, resulting in poor performance. Traditional methods like B+-trees 🌳 struggle when wildcards appear at **both ends** of the pattern.
@@ -167,4 +167,5 @@ Ready to chat with your database? 💬📊 Let the LIKE magic begin! ✨🪄
 
 Ready to make your databases **smile**? 😄
  Let neural LIKE acceleration begin! ⚡🤖📚
+
 
