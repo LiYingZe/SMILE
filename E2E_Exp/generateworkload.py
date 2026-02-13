@@ -62,7 +62,7 @@ def generateListOfWildCards(strList,insert_char_prob=0.5, wildcard_prob={'%': 0.
 if __name__ == "__main__":
     insert_char_probs = [0.5, 0.1]
     wildcard_probs = [{'%' : 0.80, '_' : 0.20}, {'%' : 0.20, '_' : 0.80}]
-    csv_file_path = '../data/lineitem10000.csv'
+    csv_file_path = '../data/lineitem.csv'
     df = pd.read_csv(csv_file_path, header=None)
     sL = df[0].tolist()
     
@@ -73,7 +73,7 @@ if __name__ == "__main__":
             first_num = insert_char_prob * 10
             secon_num = wildcard_prob['%'] * 10
             
-            filename = f'./queries/lineitem10000_ipct{first_num}_pct{secon_num}.npy'
+            filename = f'./queries/lineitem_ipct{first_num}_pct{secon_num}.npy'
             
             wildstrs = generateListOfWildCards(sL, insert_char_prob, wildcard_prob)
             

@@ -107,13 +107,13 @@ def main():
     parser.add_argument(
         "--data_path",
         type=str,
-        default="./data/lineitem10000.csv",
+        default="./data/lineitem.csv",
         help="Path to data file used to rebuild vocab.",
     )
     parser.add_argument(
         "--model_path",
         type=str,
-        required=True,
+        default="./lineitem/best_model.pth",
         help="Path to model state_dict (torch.load).",
     )
     parser.add_argument("--HIDDEN_SIZE", type=int, default=512)

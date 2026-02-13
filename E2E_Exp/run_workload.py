@@ -134,7 +134,6 @@ def main():
             'password': password,
             'port': port
         }
-        # extensions = ["","_prefix","_suffix","_hash","_gist_new","_gin_new","_gist", "_trgm"]
         extensions = ["","_prefix","_suffix","_hash","_gist_new","_gin_new","_gist", "_trgm"]
         for ext in extensions:
             table_name = f"{base_table_name}{ext}"
